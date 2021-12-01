@@ -46,12 +46,12 @@ li {
     padding-bottom: 0px;
     font-family: monospace;
 }
-.tag {
+.token-tag {
     color: #f92672;
 }
-.green1 {
+.token-attr {
     color: #a6e22e;
 }
-.idkYellow {
+.token-link {
     color: #e6db74;
 }
