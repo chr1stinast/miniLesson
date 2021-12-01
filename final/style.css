@@ -47,5 +47,11 @@ li {
     font-family: monospace;
 }
 .tag {
-    color: red;
+    color: #f92672;
+}
+.cssTag {
+    color: #a6e22e;
+}
+.idkYellow {
+    color: #e6db74;
 }
