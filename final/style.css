@@ -8,15 +8,16 @@ body {
 .typewriter-text {
     display: inline-block;
     overflow: hidden;
-    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    animation: typing 2.5s steps(30, end), blink .75s step-end infinite;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
-    border-right: 4px solid orange;
+    border-right: 4px solid black;
     box-sizing: border-box;
+    font-size: 36px;
 }
 @keyframes typing {
-    from { 
+    from {
         width: 0% 
     }
     to { 
@@ -28,6 +29,10 @@ body {
         border-color: transparent 
     }
     50% { 
-        border-color: orange; 
+        border-color: black; 
     }
+}
+li {
+    line-height:70%;
+    padding-bottom: 3px;
 }
