@@ -1,0 +1,7 @@
+body {
+    font-size: 24px;
+}
+.code {
+    font-family: monospace;
+    animation-iteration-count: 0;
+}
