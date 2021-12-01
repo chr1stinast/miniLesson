@@ -1,6 +1,38 @@
 body {
     font-size: 24px;
 }
-.code {
+.typewriter {
     font-family: monospace;
+    display: inline-block;
+}
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 2.5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid black;
+    box-sizing: border-box;
+    font-size: 36px;
+}
+@keyframes typing {
+    from {
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: black; 
+    }
+}
+li {
+    line-height:70%;
+    padding-bottom: 3px;
 }
