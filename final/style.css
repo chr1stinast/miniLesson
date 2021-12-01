@@ -6,6 +6,12 @@ body {
     font-family: monospace;
     display: inline-block;
 }
+.header {
+    text-align: center;
+    padding: 4.15rem 0;
+    background: #33cccc;
+    margin: 0;
+}
 .typewriter-text {
     display: inline-block;
     overflow: hidden;
