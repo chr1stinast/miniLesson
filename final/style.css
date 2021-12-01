@@ -35,4 +35,5 @@ body {
 li {
     line-height:70%;
     padding-bottom: 3px;
+    font-family: monospace;
 }
