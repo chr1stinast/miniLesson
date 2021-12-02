@@ -39,7 +39,7 @@ button:hover {
 .typewriter-text {
     display: inline-block;
     overflow: hidden;
-    animation: typing 2.5s steps(30, end), blink .75s step-end infinite;
+    animation: typing 2.25s steps(35, end), blink .75s step-end infinite;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
@@ -47,14 +47,12 @@ button:hover {
     box-sizing: border-box;
     font-size: 36px;
 }
-.typewriter-examples {
+#learn {
     display: inline-block;
     overflow: hidden;
-    animation: typing 3.5s steps(50, end), blink .75s step-end infinite;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
-    border-right: 4px solid white;
     box-sizing: border-box;
     font-size: 36px;
 }
@@ -67,6 +65,9 @@ button:hover {
     border-right: 4px solid white;
     box-sizing: border-box;
     font-size: 36px;
+}
+#options {
+    color:#f92672;
 }
 /* make the defintiion start typing after */
 @keyframes typing {
