@@ -26,10 +26,16 @@ button {
     border:0;
 }
 button:hover {
-    background: #75c6eb;
+    color: #f92672;
 }
 .container {
     text-align: center;
+}
+button:hover span {
+    display:none
+}
+button:hover:before {
+    content:"YES!"
 }
 .img {
     margin-left: 280px;
@@ -39,7 +45,7 @@ button:hover {
 .typewriter-text {
     display: inline-block;
     overflow: hidden;
-    animation: typing 2.25s steps(35, end), blink .75s step-end infinite;
+    animation: typing 2.0s steps(35, end), blink .75s step-end infinite;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
