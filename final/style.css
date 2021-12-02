@@ -47,6 +47,17 @@ button:hover {
     box-sizing: border-box;
     font-size: 36px;
 }
+.typewriter-examples {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 2.5s steps(50, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+    font-size: 36px;
+}
 #whatIs {
     display: inline-block;
     overflow: hidden;
