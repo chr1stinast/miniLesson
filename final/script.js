@@ -1,3 +1,4 @@
+// taken from stack overflow 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -8,11 +9,9 @@ function isInViewport(el) {
 
     );
 }
-
-
-const box = document.querySelector('h2');
-const box2 = document.querySelector('#whatIs');
-const box3 = document.querySelector('#options');
+let box = document.querySelector('h2');
+let box2 = document.querySelector('#whatIs');
+let box3 = document.querySelector('#options');
 document.addEventListener('scroll', function () {
     if(isInViewport(box)) {
         box.classList.add("typewriter-text");
