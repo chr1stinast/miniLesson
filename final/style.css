@@ -4,15 +4,23 @@ body {
     background-color: rgb(47, 47, 65);
     color: white;
 }
+.marginLeft {
+    margin-left: 25px;
+}
 .typewriter {
     font-family: monospace;
     display: inline-block;
 }
 .header {
-    text-align: center;
     padding: 4.15rem 0;
     background: #33cccc;
     margin: 0;
+    text-align: center;
+}
+.img {
+    margin-left: 280px;
+    margin-right: auto;
+    width: 60%;
 }
 .typewriter-text {
     display: inline-block;
@@ -25,6 +33,7 @@ body {
     box-sizing: border-box;
     font-size: 36px;
 }
+/* make the defintiion start typing after */
 @keyframes typing {
     from {
         width: 0% 
@@ -54,4 +63,9 @@ li {
 }
 .token-link {
     color: #e6db74;
+}
+.token-code {
+    padding: 4.15rem;
+    background: #272822;
+    margin-right: 125px;
 }
