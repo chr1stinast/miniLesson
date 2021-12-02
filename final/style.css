@@ -18,15 +18,19 @@ body {
     text-align: center;
 }
 button {
-    background: #33cccc;
+    background: #e6db74;
     margin: 0;
     font-size: 26px;
     padding: 10px;
     font-family: monospace;
     border:0;
 }
+.click-link {
+    color:#75c6eb;
+}
 button:hover {
-    color: #f92672;
+    background-color: #a6e22e;
+    cursor:pointer;
 }
 .container {
     text-align: center;
@@ -35,7 +39,7 @@ button:hover span {
     display:none
 }
 button:hover:before {
-    content:"YES!"
+    content:"Click here!"
 }
 .img {
     margin-left: 280px;
