@@ -24,13 +24,60 @@
             <button class=title-button id=event-handle>Event Handling</button>
             <button class=title-button id=dom>DOM Manipulation</button>
         </div>
-        <h1 class=title id=effect>Effects</h1>
-        <h1 class=title id=event-handle>Event Handling</h1>
-        <h1 class=title id=dom>DOM Manipulation</h1>
+        <h1 class=title style="color: #f92672">Effects</h1>
+        <h3>There are 4 different types of event methods:</h3>
+        <ul>
+            <li>Mouse Events</li>
+            <li>Keyboard Events</li>
+            <li>Form Events</li>
+            <li>Document/Window Events</li>
+        </ul>
 
+        <p>All event methods share a similar syntax. The formula is basically:
+        <div class="token-code">$(<span class="token-tag">"element"</span>).<span class="token-attr">click</span>(<span
+                class="token-link">function</span>(){<br<br><br>&emsp;&emsp;<span style="color:#75c6eb">/// what happens when
+                    event is fired</span><br>});</div>
+        </p>
+
+        <br>
+        <h3>Quick run-through of the most commmon event methods:</h3>
+        <ul>
+            <li>
+                <p><b>click()</b></p>
+                <p>The click() method attaches an event handler function to an HTML element. The function is executed
+                    when the user clicks on the HTML element.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">click</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span class="token-attr">hide</span>();<br>});</div>
+                </p>
+                <p><b>When clicked, anything with the button tag will be hidden.</b></p>
+                <p>This code also uses another event method, <b>hide()</b>. Hide (as it's name implies) just hides an element.</p>
+            </li>
+
+        </ul>
+
+        <h1 class=title style="color: #a6e22e">Event Handling</h1>
+        <h3>There are 4 different types of event methods:</h3>
+        <ul>
+            <li>Mouse Events</li>
+            <li>Keyboard Events</li>
+            <li>Form Events</li>
+            <li>Document/Window Events</li>
+        </ul>
+
+        <h1 class=title style="color: #e6db74">DOM Manipulation</h1>
+        <h3>There are 4 different types of event methods:</h3>
+        <ul>
+            <li>Mouse Events</li>
+            <li>Keyboard Events</li>
+            <li>Form Events</li>
+            <li>Document/Window Events</li>
+        </ul>
 
         <div class="container"><button class="move-button" onclick="window.location.href='index.html'"><span>Back to
                     Information</span></button></div>
+        <br>
 </body>
 <script src="script.js"></script>
 

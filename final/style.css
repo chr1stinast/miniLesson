@@ -106,7 +106,6 @@ button {
     }
 }
 li {
-    line-height:70%;
     padding-bottom: 0px;
     font-family: monospace;
 }
@@ -130,6 +129,7 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    margin-bottom: 250px;
   }
 #effect {
     color: #f92672;
@@ -141,15 +141,18 @@ li {
     color: #e6db74;
 }
 
-#effect.title-button:hover {
+#effect:hover {
+    cursor: pointer;
     background-color: #f92672;
     color: rgb(0, 183, 255);
 }
-#event-handle.title-button:hover {
+#event-handle:hover {
     background-color: #a6e22e;
     color: rgb(0, 183, 255);
+    cursor: pointer;
 }
 #dom.title-button:hover {
     background-color: #e6db74;
     color:rgb(0, 183, 255);
+    cursor: pointer;
 }

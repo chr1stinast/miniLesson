@@ -47,3 +47,16 @@ box3.addEventListener('animationend', () => {
         box3.textContent = currentText[i];
     }, 1000); 
 });
+
+$('#effect').click(function(){
+    $(document).scrollTop(700) 
+});
+
+$('#event-handle').click(function(){
+    $(document).scrollTop(1900) 
+});
+
+$('#dom').click(function(){
+    $(document).scrollTop(3000) 
+});
+    
