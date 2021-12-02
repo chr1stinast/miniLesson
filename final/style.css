@@ -18,6 +18,9 @@ body {
     text-align: center;
     font-size:50px;
 }
+.method {
+    color:rgb(0, 183, 255)
+}
 button {
     background: #e6db74;
     margin: 0;

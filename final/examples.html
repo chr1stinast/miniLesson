@@ -24,6 +24,13 @@
             <button class=title-button id=event-handle>Event Handling</button>
             <button class=title-button id=dom>DOM Manipulation</button>
         </div>
+        <h3 class="method">jQuery Selectors</h3>
+        <p>jQuery selectors allow you to select and manipulate HTML element(s). jQuery selectors are used to "find" (or
+            select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much
+            more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</p>
+        <p>All selectors use the format $(<span class="token-tag">""</span>);</p>
+        <div class="token-code">$(<span class="token-tag">"p"</span>);</div>
+        <br>
         <h1 class=title style="color: #f92672">Effects</h1>
         <h3>There are 4 different types of event methods:</h3>
         <ul>
@@ -33,30 +40,6 @@
             <li>Document/Window Events</li>
         </ul>
 
-        <p>All event methods share a similar syntax. The formula is basically:
-        <div class="token-code">$(<span class="token-tag">"element"</span>).<span class="token-attr">click</span>(<span
-                class="token-link">function</span>(){<br<br><br>&emsp;&emsp;<span style="color:#75c6eb">/// what happens when
-                    event is fired</span><br>});</div>
-        </p>
-
-        <br>
-        <h3>Quick run-through of the most commmon event methods:</h3>
-        <ul>
-            <li>
-                <p><b>click()</b></p>
-                <p>The click() method attaches an event handler function to an HTML element. The function is executed
-                    when the user clicks on the HTML element.</p>
-                <p>Example:
-                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
-                        class="token-attr">click</span>(<span class="token-link">function</span>(){<br<br>
-                        <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span class="token-attr">hide</span>();<br>});</div>
-                </p>
-                <p><b>When clicked, anything with the button tag will be hidden.</b></p>
-                <p>This code also uses another event method, <b>hide()</b>. Hide (as it's name implies) just hides an element.</p>
-            </li>
-
-        </ul>
-
         <h1 class=title style="color: #a6e22e">Event Handling</h1>
         <h3>There are 4 different types of event methods:</h3>
         <ul>
@@ -64,6 +47,70 @@
             <li>Keyboard Events</li>
             <li>Form Events</li>
             <li>Document/Window Events</li>
+        </ul>
+        <p>All event methods share a similar syntax. The formula is basically:
+        <div class="token-code"><span style="color:#75c6eb">/// to just call the function</span><br>$(<span
+                class="token-tag">"id"</span>).<span class="token-attr">click</span>();<br></span><br>$(<span
+                class="token-tag">"id"</span>).<span class="token-attr">click</span>(<span
+                class="token-link">function</span>(){<br<br>
+                <br>&emsp;&emsp;<span style="color:#75c6eb">/// what happens
+                    when
+                    event is fired</span><br>});
+        </div>
+        </p>
+        <br>
+        <h3>Here's a quick run-through of the most common events:</h3>
+        <ul>
+            <li>
+                <p class="method"><b>click()</b></p>
+                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
+                    function is executed
+                    when the user clicks on the HTML element.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">click</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                            class="token-attr">hide</span>();<br>});</div>
+                </p>
+                <p><b>When clicked, anything with the button tag will be hidden.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>dblclick()</b></p>
+                <p>The dblclick() method triggers the dblclick event, which is a mouse event. It attaches an event
+                    handler function to an HTML element. The function is executed when the user double-clicks on the
+                    HTML element.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">dblclick</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                            class="token-attr">hide</span>();<br>});</div>
+                </p>
+                <p><b>When double clicked, anything with the button tag will be hidden.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>keydown()/keyup()/keypress()</b></p>
+                <p>These key methods trigger keyboard events. When a key is pressed, released, or is being pressed, it
+                    attaches an event handler function to be executed when the event occurs.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"p"</span>).<span
+                        class="token-attr">keydown</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;$(<span class="token-tag">"p"</span>).<span
+                            class="token-attr">show</span>();<br>});</div>
+                </p>
+                <p><b>When a key is pressed down, anything with the paragraph tag will show.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>mousedown()/mouseup()</b></p>
+                <p>Similarily to the key methods, when the left, right, or middle mouse button is pressed down or is released, while the mouse is over the HTML element, these mouse methods attach an event handler function to be executed when the event occurs.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"p"</span>).<span
+                        class="token-attr">mousedown()</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;alert(<span class="token-tag">"Mouse down!"</span>);<br>});</div>
+                </p>
+                <p><b>When any of the mouse buttons are pressed down while over anything with the paragraph tag, the alert will be called.</b></p>
+            </li>
+
+
         </ul>
 
         <h1 class=title style="color: #e6db74">DOM Manipulation</h1>
