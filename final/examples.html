@@ -62,6 +62,10 @@
         <h3>Here's a quick run-through of the most common events:</h3>
         <ul>
             <li>
+                <p class="method"><b>$(document).ready()</b></p>
+                <p>Allows us to execute a function when the document is fully loaded. </p>
+            </li>
+            <li>
                 <p class="method"><b>click()</b></p>
                 <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
                     function is executed
@@ -101,14 +105,44 @@
             </li>
             <li>
                 <p class="method"><b>mousedown()/mouseup()</b></p>
-                <p>Similarily to the key methods, when the left, right, or middle mouse button is pressed down or is released, while the mouse is over the HTML element, these mouse methods attach an event handler function to be executed when the event occurs.</p>
+                <p>Similarily to the key methods, when the left, right, or middle mouse button is pressed down or is
+                    released, while the mouse is over the HTML element, these mouse methods attach an event handler
+                    function to be executed when the event occurs.</p>
                 <p>Example:
                 <div class="token-code">$(<span class="token-tag">"p"</span>).<span
-                        class="token-attr">mousedown()</span>(<span class="token-link">function</span>(){<br<br>
+                        class="token-attr">mousedown</span>(<span class="token-link">function</span>(){<br<br>
                         <br>&emsp;&emsp;alert(<span class="token-tag">"Mouse down!"</span>);<br>});</div>
                 </p>
-                <p><b>When any of the mouse buttons are pressed down while over anything with the paragraph tag, the alert will be called.</b></p>
+                <p><b>When any of the mouse buttons are pressed down while over anything with the paragraph tag, the
+                        alert will be called.</b></p>
             </li>
+            <li>
+                <p class="method"><b>hover()</b></p>
+                <p>The hover() method takes two functions and is a combination of the mouseenter() and mouseleave()
+                    methods. The first function is executed when the mouse enters the HTML element, and the second
+                    function is executed when the mouse leaves the HTML element.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">hover</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;alert(<span class="token-tag">"You're hovering over a button!"</span>);<br>};<br><span class="token-link">function</span>(){<br<br>
+                            <br>&emsp;&emsp;alert(<span class="token-tag">"You stopped hovering over a button!"</span>);<br>});</div>
+                </p>
+                <p><b>When the mouse point is hovering over anything with the button tag, the
+                        alert will be called to notify the user as such, and vice versa.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>on()</b></p>
+                <p>The on() method attaches one or more event handlers for the selected elements. Attach multiple event handlers to a element</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">hover</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;alert(<span class="token-tag">"You're hovering over a button!"</span>);<br>};<br><span class="token-link">function</span>(){<br<br>
+                            <br>&emsp;&emsp;alert(<span class="token-tag">"You stopped hovering over a button!"</span>);<br>});</div>
+                </p>
+                <p><b>When the mouse point is hovering over anything with the button tag, the
+                        alert will be called to notify the user as such, and vice versa.</b></p>
+            </li>
+
 
 
         </ul>
