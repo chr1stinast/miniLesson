@@ -32,14 +32,12 @@
         <div class="token-code">$(<span class="token-tag">"p"</span>);</div>
         <br>
         <h1 class=title style="color: #f92672">Effects</h1>
-        <h3>There are a few different types of effects in jQuery: basic events, custom, and fading.</h3>
+        <h3>There are a few different types of effects in jQuery: basic events, custom animations, and fading animations.</h3>
         <h3>Basic Events:</h3>
         <ul>
             <li>
                 <p class="method"><b>hide()</b></p>
-                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
-                    function is executed
-                    when the user clicks on the HTML element.</p>
+                <p>The hide() method hides the specified element.</p>
                 <p>Example:
                 <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
                         class="token-attr">hide</span>();</div>
@@ -48,9 +46,7 @@
             </li>
             <li>
                 <p class="method"><b>show()</b></p>
-                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
-                    function is executed
-                    when the user clicks on the HTML element.</p>
+                <p>The show() method makes the specified element visible.</p>
                 <p>Example:
                 <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
                         class="token-attr">show</span>();</div>
@@ -67,54 +63,48 @@
                         <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
                             class="token-attr">toggle</span>();<br>});</div>
                 </p>
-                <p><b>When clicked, anything with the button tag will be hide/show depending on its previous state.</b>
+                <p><b>When clicked, the button pressed will be hide/show depending on its previous state.</b>
                 </p>
             </li>
         </ul>
-        <h3>Custom Events:</h3>
+        <h3>Custom Animations:</h3>
         <ul>
             <li>
                 <p class="method"><b>animate()</b></p>
-                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
-                    function is executed
-                    when the user clicks on the HTML element.</p>
+                <p>The animate() method is used to create custom animations.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
-                </p>
-                <p><b>Hides current element.</b></p>
+                    <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).<span
+                            class="token-attr">animate</span>({left: <span class="token-tag">'100px'</span>});</div>
+                    </p>
+                <p><b>All paragraph elements will move 100px from the left-most side of the screen in an animated style.</b></p>
             </li>
             <li>
                 <p class="method"><b>delay()</b></p>
-                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
-                    function is executed
-                    when the user clicks on the HTML element.</p>
+                <p>The delay() method sets a timer to delay the execution of the next item in the queue.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">show</span>();</div>
-                </p>
-                <p><b>Current element that was once hidden is now visible.</b></p>
+                    <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).<span
+                            class="token-attr">delay</span>(<span class="token-tag">500</span>).fadeIn();</div>
+                    </p>
+                <p><b>The fadeIn animation for all paragraph elements will be delayed for 500 milliseconds.</b></p>
             </li>
         </ul>
-        <h3>Fading:</h3>
+        <h3>Fading animations:</h3>
         <ul>
             <li>
                 <p class="method"><b>fadeIn()</b></p>
                 <p>The fadeIn() method raises the opacity of the element to have it fade in.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
-                </p>
-                <p><b>Hides current element.</b></p>
+                    <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).fadeIn();</div>
+                    </p>
+                <p><b>All paragraph elements will fade in.</b></p>
             </li>
             <li>
                 <p class="method"><b>fadeOut()</b></p>
                 <p>The fadeOut() method lowers the opacity of the element to have it fade out.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">show</span>();</div>
-                </p>
-                <p><b>Current element that was once hidden is now visible.</b></p>
+                    <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).fadeOut();</div>
+                    </p>
+                <p><b>All paragraph elements will fade out.</b></p>
             </li>
             <li>
                 <p class="method"><b>fadeToggle()</b></p>
@@ -123,9 +113,9 @@
                 <div class="token-code">$(<span class="token-tag">"button"</span>).<span
                         class="token-attr">click</span>(<span class="token-link">function</span>(){<br<br>
                         <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                            class="token-attr">toggle</span>();<br>});</div>
+                            class="token-attr">fadeToggle</span>();<br>});</div>
                 </p>
-                <p><b>When clicked, anything with the button tag will be hide/show depending on its previous state.</b>
+                <p><b>When clicked, the current button will fade in/out depending on its previous state.</b>
                 </p>
             </li>
         </ul>
@@ -167,7 +157,7 @@
                         <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
                             class="token-attr">hide</span>();<br>});</div>
                 </p>
-                <p><b>When clicked, anything with the button tag will be hidden.</b></p>
+                <p><b>When clicked, the button pressed will be hidden.</b></p>
             </li>
             <li>
                 <p class="method"><b>dblclick()</b></p>
@@ -180,7 +170,7 @@
                         <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
                             class="token-attr">hide</span>();<br>});</div>
                 </p>
-                <p><b>When double clicked, anything with the button tag will be hidden.</b></p>
+                <p><b>When double clicked, the button pressed will be hidden.</b></p>
             </li>
             <li>
                 <p class="method"><b>keydown()/keyup()/keypress()</b></p>
@@ -232,52 +222,61 @@
         <h3>Some common DOM Manipulation methods:</h3>
         <ul>
             <li>
-                <p class="method"><b>addClass()</b></p>
-                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p class="method"><b>addClass()/removeClass()</b></p>
+                <p>Adds/removes the specified class(es) to each element in the set of matched elements.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
+                <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).<span
+                        class="token-attr">addClass</span>(<span class="token-tag">'class'</span>);</div>
                 </p>
-                <p><b>Hides current element.</b></p>
+                <p><b>Adds class to all paragraph elements.</b></p>
             </li>
             <li>
                 <p class="method"><b>append()</b></p>
-                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p> Inserts content to the end of element(s) which is specified by a selector.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
+                <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).<span
+                        class="token-attr">append</span>(<span class="token-tag">'text'</span>);</div>
                 </p>
-                <p><b>Hides current element.</b></p>
+                <p><b>Adds "text" to the end of the content of all of the paragraph elements.</b></p>
             </li>
             <li>
                 <p class="method"><b>before()</b></p>
-                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
-                <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
+                <p>Inserts content (new or existing DOM elements) before an element(s) which is specified by a selector.
                 </p>
-                <p><b>Hides current element.</b></p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).<span
+                        class="token-attr">before</span>(<span class="token-tag">'&ltspan&gtThis is
+                        text&ltspan&gt'</span>);</div>
+                </p>
+                <p><b>Inserts "&ltspan&gtThis is text&ltspan&gt" before every paragraph element.</b></p>
             </li>
             <li>
                 <p class="method"><b>after()</b></p>
-                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
-                <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
+                <p>Inserts content (new or existing DOM elements) after an element(s) which is specified by a selector.
                 </p>
-                <p><b>Hides current element.</b></p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'p'</span>).<span
+                        class="token-attr">after</span>(<span class="token-tag">'&ltspan&gtThis is
+                        text&ltspan&gt'</span>);</div>
+                </p>
+                <p><b>Inserts "&ltspan&gtThis is text&ltspan&gt" after every paragraph element.</b></p>
             </li>
             <li>
                 <p class="method"><b>replaceAll()</b></p>
-                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p>Replace target element(s) with specified element.</p>
                 <p>Example:
-                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
-                        class="token-attr">hide</span>();</div>
+                <div class="token-code">&emsp;&emsp;$(<span class="token-tag">'&ltspan&gtReplacement
+                        text&ltspan&gt'</span>).<span class="token-attr">replaceAll</span>(<span
+                        class="token-tag">'p'</span>);</div>
                 </p>
-                <p><b>Hides current element.</b></p>
+                <p><b>Replaces every paragraph element with "&ltspan&gtReplacement text&ltspan&gt".</b></p>
             </li>
+            <br>
             <div class="container"><button class="move-button" onclick="window.location.href='index.html'"><span>Back to
                         Information</span></button></div>
+            <br>
+            <div class="container"><button class="move-button"
+                    onclick="window.location.href='sources.html'"><span>Sources</span></button></div>
             <br>
 </body>
 <script src="script.js"></script>

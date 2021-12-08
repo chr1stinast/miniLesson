@@ -12,6 +12,9 @@ body {
     font-family: monospace;
     display: inline-block;
 }
+.link {
+    color:rgb(0, 183, 255)
+}
 .header {
     padding: 4.15rem 0;
     background: #75c6eb;
