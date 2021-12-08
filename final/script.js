@@ -53,10 +53,10 @@ $('#effect').click(function(){
 });
 
 $('#event-handle').click(function(){
-    $(document).scrollTop(1500) 
+    $(document).scrollTop(4950) 
 });
 
 $('#dom').click(function(){
-    $(document).scrollTop(6000) 
+    $(document).scrollTop(8500) 
 });
     

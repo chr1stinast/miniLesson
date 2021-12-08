@@ -3,6 +3,7 @@ body {
     font-family: monospace;
     background-color: rgb(47, 47, 65);
     color: white;
+    margin: 0;
 }
 .marginLeft {
     margin-left: 25px;
