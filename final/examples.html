@@ -32,13 +32,104 @@
         <div class="token-code">$(<span class="token-tag">"p"</span>);</div>
         <br>
         <h1 class=title style="color: #f92672">Effects</h1>
-        <h3>There are 4 different types of event methods:</h3>
+        <h3>There are a few different types of effects in jQuery: basic events, custom, and fading.</h3>
+        <h3>Basic Events:</h3>
         <ul>
-            <li>Mouse Events</li>
-            <li>Keyboard Events</li>
-            <li>Form Events</li>
-            <li>Document/Window Events</li>
+            <li>
+                <p class="method"><b>hide()</b></p>
+                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
+                    function is executed
+                    when the user clicks on the HTML element.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>show()</b></p>
+                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
+                    function is executed
+                    when the user clicks on the HTML element.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">show</span>();</div>
+                </p>
+                <p><b>Current element that was once hidden is now visible.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>toggle()</b></p>
+                <p>The toggle() methods just switches between hide() and show() depending on whichever was called last.
+                </p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">click</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                            class="token-attr">toggle</span>();<br>});</div>
+                </p>
+                <p><b>When clicked, anything with the button tag will be hide/show depending on its previous state.</b>
+                </p>
+            </li>
         </ul>
+        <h3>Custom Events:</h3>
+        <ul>
+            <li>
+                <p class="method"><b>animate()</b></p>
+                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
+                    function is executed
+                    when the user clicks on the HTML element.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>delay()</b></p>
+                <p>The click() method is a mouse event. It attaches an event handler function to an HTML element. The
+                    function is executed
+                    when the user clicks on the HTML element.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">show</span>();</div>
+                </p>
+                <p><b>Current element that was once hidden is now visible.</b></p>
+            </li>
+        </ul>
+        <h3>Fading:</h3>
+        <ul>
+            <li>
+                <p class="method"><b>fadeIn()</b></p>
+                <p>The fadeIn() method raises the opacity of the element to have it fade in.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>fadeOut()</b></p>
+                <p>The fadeOut() method lowers the opacity of the element to have it fade out.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">show</span>();</div>
+                </p>
+                <p><b>Current element that was once hidden is now visible.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>fadeToggle()</b></p>
+                <p>The fadeToggle() method displays/hides elements by animating their opacity.</p>
+                <p>Example:
+                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
+                        class="token-attr">click</span>(<span class="token-link">function</span>(){<br<br>
+                        <br>&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                            class="token-attr">toggle</span>();<br>});</div>
+                </p>
+                <p><b>When clicked, anything with the button tag will be hide/show depending on its previous state.</b>
+                </p>
+            </li>
+        </ul>
+        <br>
 
         <h1 class=title style="color: #a6e22e">Event Handling</h1>
         <h3>There are 4 different types of event methods:</h3>
@@ -50,8 +141,8 @@
         </ul>
         <p>All event methods share a similar syntax. The formula is basically:
         <div class="token-code"><span style="color:#75c6eb">/// to just call the function</span><br>$(<span
-                class="token-tag">"id"</span>).<span class="token-attr">click</span>();<br></span><br>$(<span
-                class="token-tag">"id"</span>).<span class="token-attr">click</span>(<span
+                class="token-tag">"p"</span>).<span class="token-attr">click</span>();<br></span><br>$(<span
+                class="token-tag">"p"</span>).<span class="token-attr">click</span>(<span
                 class="token-link">function</span>(){<br<br>
                 <br>&emsp;&emsp;<span style="color:#75c6eb">/// what happens
                     when
@@ -124,41 +215,70 @@
                 <p>Example:
                 <div class="token-code">$(<span class="token-tag">"button"</span>).<span
                         class="token-attr">hover</span>(<span class="token-link">function</span>(){<br<br>
-                        <br>&emsp;&emsp;alert(<span class="token-tag">"You're hovering over a button!"</span>);<br>};<br><span class="token-link">function</span>(){<br<br>
-                            <br>&emsp;&emsp;alert(<span class="token-tag">"You stopped hovering over a button!"</span>);<br>});</div>
+                        <br>&emsp;&emsp;alert(<span class="token-tag">"You're hovering over a
+                            button!"</span>);<br>};<br><span class="token-link">function</span>(){<br<br>
+                            <br>&emsp;&emsp;alert(<span class="token-tag">"You stopped hovering over a
+                                button!"</span>);<br>});</div>
                 </p>
                 <p><b>When the mouse point is hovering over anything with the button tag, the
                         alert will be called to notify the user as such, and vice versa.</b></p>
+            </li>
+        </ul>
+        <br>
+        <h1 class=title style="color: #e6db74">DOM Manipulation</h1>
+        <h3>All DOM Manipulation methods just manipulate the DOM is some way, where that be through modifying elements
+            and their style properties, or retireiving certain information. (The DOM is basically just the document)
+        </h3>
+        <h3>Some common DOM Manipulation methods:</h3>
+        <ul>
+            <li>
+                <p class="method"><b>addClass()</b></p>
+                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
             </li>
             <li>
-                <p class="method"><b>on()</b></p>
-                <p>The on() method attaches one or more event handlers for the selected elements. Attach multiple event handlers to a element</p>
+                <p class="method"><b>append()</b></p>
+                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
                 <p>Example:
-                <div class="token-code">$(<span class="token-tag">"button"</span>).<span
-                        class="token-attr">hover</span>(<span class="token-link">function</span>(){<br<br>
-                        <br>&emsp;&emsp;alert(<span class="token-tag">"You're hovering over a button!"</span>);<br>};<br><span class="token-link">function</span>(){<br<br>
-                            <br>&emsp;&emsp;alert(<span class="token-tag">"You stopped hovering over a button!"</span>);<br>});</div>
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
                 </p>
-                <p><b>When the mouse point is hovering over anything with the button tag, the
-                        alert will be called to notify the user as such, and vice versa.</b></p>
+                <p><b>Hides current element.</b></p>
             </li>
-
-
-
-        </ul>
-
-        <h1 class=title style="color: #e6db74">DOM Manipulation</h1>
-        <h3>There are 4 different types of event methods:</h3>
-        <ul>
-            <li>Mouse Events</li>
-            <li>Keyboard Events</li>
-            <li>Form Events</li>
-            <li>Document/Window Events</li>
-        </ul>
-
-        <div class="container"><button class="move-button" onclick="window.location.href='index.html'"><span>Back to
-                    Information</span></button></div>
-        <br>
+            <li>
+                <p class="method"><b>before()</b></p>
+                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>after()</b></p>
+                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
+            </li>
+            <li>
+                <p class="method"><b>replaceAll()</b></p>
+                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                <p>Example:
+                <div class="token-code">&emsp;&emsp;$(<span style="color:#75c6eb">this</span>).<span
+                        class="token-attr">hide</span>();</div>
+                </p>
+                <p><b>Hides current element.</b></p>
+            </li>
+            <div class="container"><button class="move-button" onclick="window.location.href='index.html'"><span>Back to
+                        Information</span></button></div>
+            <br>
 </body>
 <script src="script.js"></script>
 
